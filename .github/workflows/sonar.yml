@@ -20,7 +20,7 @@ jobs:
             - name: Run build-wrapper
               run: |
                   sudo apt update && sudo apt upgrade
-                  sudo apt install ninja-build libcurl4 
+                  sudo apt install ninja-build libcurl4-openssl-dev
                   git submodule update --init --recursive
                   mkdir build
                   cd build
