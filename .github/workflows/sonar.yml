@@ -20,7 +20,7 @@ jobs:
             - name: Run build-wrapper
               run: |
                   sudo apt update && sudo apt upgrade
-                  sudo apt install ninja-build libcurl4-openssl-dev libzip-dev libsdl2-dev libfreetype-dev libpng-dev libspeexdsp-dev nlohmann-json3-dev openssl icu-devtools gl-117 flac
+                  sudo apt install ninja-build libcurl4-openssl-dev libzip-dev libsdl2-dev libfreetype-dev libpng-dev libspeexdsp-dev nlohmann-json3-dev openssl icu-devtools gl-117 flac libflac++-dev
                   git submodule update --init --recursive
                   mkdir build
                   cd build
