@@ -20,7 +20,7 @@ jobs:
             - name: Run build-wrapper
               run: |
                   sudo apt update && sudo apt upgrade
-                  sudo apt install ninja-build
+                  sudo apt install ninja-build libcurl
                   git submodule update --init --recursive
                   mkdir build
                   cd build
